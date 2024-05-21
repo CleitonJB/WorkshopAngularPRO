@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## NX
+
+Execute o comando abaixo para gerar um gráfico de dependências (módulos) do projeto:
+
+```
+npx nx graph
+```
+
+Resultado:
+
+![Dependências do projeto](./src/assets/imgs/README-img01.png)
