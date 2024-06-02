@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, Params } from '@angular/router';
+import { Observable, switchMap } from 'rxjs';
+
+import { getParamsId } from '../shared/utils/get-params-id';
 
 import { User } from '../modules/User';
 
@@ -13,28 +15,10 @@ import { UserService } from '../shared/user/user.service';
   templateUrl: './user-detail.component.html',
   styleUrl: './user-detail.component.scss',
 })
-export class UserDetailComponent implements OnInit {
-  constructor(
-    private userService: UserService,
-    private activatedRoute: ActivatedRoute,
-  ) {}
+export class UserDetailComponent {
+  private userService: UserService = inject(UserService);
 
-  ngOnInit(): void {
-      this.activatedRoute.params.subscribe({
-        next: (data: Params) => {
-          console.log(data['id']);
-          this.userService.getUserById(data['id']).subscribe({
-            next: (userData: User) => {
-              console.log(userData);
-            },
-            error: (error: unknown) => {
-              console.error(error);
-            }
-          });
-        },
-        error: (error: unknown) => {
-          console.error(error);
-        }
-      });
-  }
+  public $user: Observable<User> = getParamsId().pipe(
+    switchMap((id: string) => this.userService.getUserById(id))
+  );
 }
