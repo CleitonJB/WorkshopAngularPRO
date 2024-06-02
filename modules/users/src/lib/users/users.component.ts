@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 
 import { User } from './modules/User';
 
-import { UserService } from './shared/user.service';
+import { UserService } from './shared/user/user.service';
 
 @Component({
   selector: 'lib-users',
