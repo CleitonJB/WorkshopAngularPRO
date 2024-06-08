@@ -18,4 +18,10 @@ describe('HomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it("should contain title 'Workshop Angular'", () => {
+    const header: HTMLElement = fixture.nativeElement.querySelector('header');
+
+    expect(header.textContent).toBe('Workshop Angular');
+  });
 });
