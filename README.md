@@ -5,8 +5,11 @@ Este projeto é o resultado do evento **"Workshop Angular PRO"** ministrado por 
 O evento foi segmentado em 3 encontros, sendos eles:
 
 - 1º encontro (13/05): [Arquitetura escalável & Planejamento de carreira]("https://www.youtube.com/watch?v=lDkKQQTTGl4&t=8013s&ab_channel=PaoloAlmeida")
+    - Material da aula: [Arquitetura Angular]("https://stormy-astronaut-b2d.notion.site/Arquitetura-Angular-1f8abdf6df8549e0a4e4c679e99c3513")
 - 2º encontro (14/05): [Roteamento com RxJS e Top 3 Skills para Devs Seniores]("https://www.youtube.com/watch?v=JG7adZKQwcI&t=3547s&ab_channel=PaoloAlmeida")
+    - Material da aula: [Roteamento avançado com RxJS]("https://stormy-astronaut-b2d.notion.site/Roteamento-avan-ado-com-RxJS-dccf563851b9490ba359b6cdb09095ce")
 - 3º encontro (15/05): [Mapa completo do Dev Angular Pro e Testes]("https://www.youtube.com/watch?v=EAoBq9Q5rvQ&t=3202s&ab_channel=PaoloAlmeida")
+    - Material da aula: [Testes no Angular]("https://stormy-astronaut-b2d.notion.site/Testes-no-Angular-a5ebc808578d4354814f77f25985759e")
 
 ## Instalação
 
